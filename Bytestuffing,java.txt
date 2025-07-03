@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+import class Bytestuffing
+{
+Public static void main(String args[])throws IOException
+{
+System.out.println("enter Message");
+BufferedReader br=new BuffferedReader(new InputStreamReader(system.in));
+String str=br.readline();
+String res=new.String();
+System.out.printl("enter starting character");
+char sf=br.readline().charAt(0);
+System.out.println("enter starting character");
+char ef=br.readline().charAt(0);
+for(int i=0;i<str.length().i++)
+{
+System.out.println("/n");
+System.out.println("str.charAt(i));
+if(str.charAt(i)==sf)
+{
+res=res+str.charAt(i)+sf;
+}
+else
+if(str.charAt(i)==ef)
+{
+res=res+str.charAt(i)+ef;
+}
+else
+{
+res=res=str.charAt(i);
+}
+}
+System.out.println("the original message is:/n"+str);
+System.out.println("ther stuffed message is:/n"+res);
+res=sf+res+ef;
+System.out.println("the message after stuffing:/n"+res);
+}
+}
