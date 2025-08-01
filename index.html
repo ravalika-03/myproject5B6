@@ -3,64 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <style>
-        body{
-    background-image: url(bg3.jpg);
-    background-repeat: no-repeat;
-    background-size: 1600px 780px;
-}
-form{
-    border: solid 1px ;
-    border-color: black;
-    width: 450px;
-    height: 430px;
-    background-color: rgba(211, 211, 211, 0.959);
-    margin-top: 140px;
-    margin-left: 260px;
-    border-radius: 5px;
-
-}
-h1{
-    font-size: 40px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-label{
-    font-size: 22px;
-    font-weight: none;
-    margin-left: 130px;
-}
-input{
-    height: 20px;
-    margin-bottom: 5px; 
-    margin-left: 130px;
-}
-button{
-    margin-top: 30px;
-    margin-left: 180px;
-    background-color: rgba(153, 50, 204, 0.303);
-    border-radius: 20px;
-}
-p{
-    margin-left: 120px;
-}
-
-    </style>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <form>
-        <h1>Login Page</h1>
-        <label for="">Name</label>
-        <input type="text" placeholder="Enter Your Name"><br>
-        <label for="">Mobile Number</label><br>
-        <input type="tel" placeholder="Enter Mobile No"><br> 
-        <label for="">Email Id</label><br>
-        <input type="email" placeholder="Enter Your Email"><br>
-        <label for="">Enter Password</label><br>
-        <input type="password" placeholder="Enter Password"><br>
-        <button type="submit"><a href="catalogpage.html">Login</a></button>
-        <p>Don't have an account? <a href="registrationpage.html">Register</a></p>
-    </form>
+    <div class="container mt-5">
+        <div id="list" class="mb-4">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <form>
+            <h1 class="text-center">Login Page</h1>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile No">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Id</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <p class="text-center mt-3">Don't have an account? <a href="registrationpage.html">Register</a></p>
+        </form>
+    </div>
 </body>
 </html>
